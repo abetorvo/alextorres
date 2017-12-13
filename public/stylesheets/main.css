@@ -134,14 +134,28 @@ main ~ footer .img-src, .certs ~ footer .img-src {
 /********** CERTIFICATES **********/
 /**********************************/
 
+.certs {
+    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-repeat: none;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
 .certs img {
     width: 50%;
     margin: 20px auto;
     display: block;
 }
 
+.certs img:first-of-type {
+    margin-top: 80px;
+}
+
 .certs ~ footer {
-    position: static;
+    /*position: static;*/
 }
 
 
