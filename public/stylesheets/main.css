@@ -5,10 +5,6 @@
 body {
     margin: 0;
     font-family: 'Roboto';
-    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-position: center;*/
 }
 
 nav {
@@ -82,18 +78,28 @@ footer {
     background: #cccccc;
 }
 
+footer .img-src {
+    opacity: 0;
+}
+
 
 
 /**************************/
 /********** MAIN **********/
 /**************************/
+body {
+    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main {
     background: white;
     width: 100%;
-    height: 400px;
-    position: absolute;
-    bottom: 0;
+    height: 50vh;
+    
+    /*position: fixed;*/
+    /*margin-top: 50vh;*/
 }
 
 main h1 { 
@@ -107,11 +113,21 @@ main h1 {
 }
 
 main h1 span { 
-    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) -20px -20px repeat;
-    background-position: bottom;
+    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-position: center;
+    background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    display:block;
+    display: block;
+}
+
+main ~ footer .img-src {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    opacity: 1;
 }
 
 
