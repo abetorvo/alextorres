@@ -1,0 +1,214 @@
+/****************************/
+/********** HEADER **********/
+/****************************/
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+}
+
+nav {
+    padding: 0 15px;
+    background: rgba(0,0,0,0.5);
+}
+
+nav ul {
+    vertical-align: bottom;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+
+nav li {
+    float: left;
+    padding: 20px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgrey;
+    display: inline-block;
+    font-weight: bold;
+    transition: border 0.2s linear;
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+nav li:hover > a {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.drop-menu {
+    position: absolute;
+    margin-top: 20px;
+}
+
+.drop-item {
+    position: relative;
+    background: rgba(0,0,0,0.75);
+    padding: 10px;
+    display: none;
+    transition: all 0.2s linear;
+}
+
+.drop-item:hover {
+    color: white;
+    background: rgba(0,0,0,0.9);
+}
+
+nav li:hover .drop-item {
+    display: block;
+}
+
+
+
+/****************************/
+/********** FOOTER **********/
+/****************************/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #cccccc;
+}
+
+
+
+/**************************/
+/********** MAIN **********/
+/**************************/
+
+main {
+    background: white;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+}
+
+h1 { 
+    font-family: Arial;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: transparent;
+    font-size: 7em;
+}
+
+span { 
+    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) -20px -20px repeat;
+    background-position: bottom;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
+}
+
+
+
+/**********************************/
+/********** CERTIFICATES **********/
+/**********************************/
+
+.certs img {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+/********************************** PROJECTS **********************************/
+
+
+
+/*********************************/
+/********** TIC TAC TOE **********/
+/*********************************/
+
+.tictactoe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  font-family: Verdana;
+  background: salmon;
+}
+
+.tictactoe h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.tictactoe table {
+  margin: auto;
+  border: hidden;
+  border-collapse: collapse;
+}
+
+.tictactoe td {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 5em;
+  border: 2px solid black;
+}
+
+.tictactoe .container {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.tictactoe .marker {
+  float: left;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 5px;
+  background: #e0e0e0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5em;
+  width: 46%;
+  margin: 0 2%;
+}
+
+.tictactoe #reset {
+  display: inline-block;
+  margin: 10% 2%;
+  width: 96%;
+  line-height: 1.5em;
+  background: #55ff88;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+.tictactoe .marker:hover, .tictactoe td:hover, .tictactoe #reset:hover {
+  cursor: pointer;
+}
+
+.tictactoe .selected {
+  border: 2px solid black;
+}
+
+.tictactoe .cats {
+  background-image: url(https://lh4.googleusercontent.com/Ohk_fD8nDJqTurWSjLDwVZDILtwhbfISG_IQ0HnL3filnEnaypZYP4rZ5FHgJJpRSvhrghFAnFAjjkGgSBDIe741VGtgVgm7G-onzd3mw6DcU-JHJZyeDAPPemB_2lA-C_Zmllr2);
+  background-size: cover;
+}
+
+.tictactoe .cats td {
+  opacity: 0;
+  border: hidden;
+}
