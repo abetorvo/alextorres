@@ -91,54 +91,36 @@ body {
     background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
 }
 
-.land .container {
+main {
     background: white;
     width: 100%;
-    padding: 20px 0;
+    height: 50vh;
     position: absolute;
-    top: 50vh;
-    transform: translate(0, -50%);
-    opacity: 0.75;
+    bottom: 0;
 }
 
-
-.land .seeThru { 
-    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
-    background-position: center;
-    background-size: 150vh;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    width: 100%;
-    height: 100%;
-    color: transparent;
-}
-
-@media screen and (min-width: 150vh) {
-  .land .seeThru {
-     background-size: 100vw;
-  }
-}
-
-.land h1 {
+main h1 { 
     font-family: Arial;
     margin: 0;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    font-size: 14vw;
+    color: transparent;
+    font-size: 8em;
 }
 
-@media screen and (min-width: 920px) {
-  .land h1 {
-     font-size: 8.1em;
-  }
+main h1 span { 
+    background: url(https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: block;
 }
 
-.land ~ footer .img-src, .certs ~ footer .img-src {
+main ~ footer .img-src, .certs ~ footer .img-src {
     display: inline-block;
     position: relative;
     top: 50%;
@@ -156,6 +138,10 @@ body {
     width: 50%;
     margin: 20px auto;
     display: block;
+}
+
+.certs img:first-of-type {
+    /*margin-top: 80px;*/
 }
 
 .certs ~ footer {
