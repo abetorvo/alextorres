@@ -12,9 +12,9 @@ app.get('/certificates', function(req, res){
     res.render('certificates');
 });
 
-// app.get('/projects', function(req, res){
-//     res.render('projects');
-// });
+app.get('/projects', function(req, res){
+    res.render('projects');
+});
 
 app.get('/projects/colorgame', function(req, res){
     res.render('projects/colorgame');
